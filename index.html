@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Impact, sans-serif;
+        }
+        main{
+            background-color: burlywood;
+            width:80%;
+            max-width: 500px;
+            height: 100%;
+            margin: 3rem auto;
+            padding: 3rem 2rem;
+        }
+        .header{
+            margin: 0;
+            padding: 0;
+            border-bottom: 0.25rem solid brown;
+        }
+        .header h1{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        .header p{
+            font-family: sans-serif;
+            font-weight: 400;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        h2{
+            margin: 1.6rem auto;
+            text-align: center;
+            font-size: 2rem;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        section:nth-child(odd){
+            clear: both;
+            padding-bottom: 1rem;
+            overflow: hidden;
+        }
+        section:nth-child(odd){
+            border-bottom: 0.25rem solid brown;
+        }
+        article{
+            float: left;
+            clear: both;
+            font-family: sans-serif;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            text-transform: capitalize;
+        }
+        article + p{
+            float: right;
+            font-family: sans-serif;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+        section:nth-last-child(odd){
+            padding-top: 1rem;
+        }
+        section p{
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            text-transform: capitalize;
+            line-height: 2;
+        }
+        section>p:nth-child(odd){
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: #000;
+        }
+        p>a{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1>
+                Camper cafe
+            </h1>
+            <p>Est. 2020</p>
+        </div>
+        <section>
+            <h2>Coffee</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="">
+                <article>French Vanilla</article>
+                <p>3.00</p>
+                <article>Caramel macchiato</article>
+                <p>3.75</p>
+                <article>pumpkin spice</article>
+                <p>3.50</p>
+                <article>hazelnut</article>
+                <p>4.00</p>
+                <article>mocha</article>
+                <p>4.50</p>
+        </section>
+        <section>
+            <h2>Desserts</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="">
+                <article>Donut</article>
+                <p>1.50</p>
+                <article>cherry pie</article>
+                <p>2.75</p>
+                <article>cheesecake</article>
+                <p>3.00</p>
+                <article>cinnamon roll</article>
+                <p>2.50</p>
+        </section>
+        <section>
+            <p><a href="#">Visit our website</a></p>
+            <p>123 free code camp drive</p>
+        </section>
+    </main>
+</body>
+</html>
